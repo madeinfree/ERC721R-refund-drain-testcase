@@ -29,5 +29,7 @@ function testIWantToRug() public {
   cheats.prank(king);
   wagmi.refund(ids);
   assertEq(king.balance, 6.4 ether);
+
+  assertEq(address(wagmi).balance, 0 ether);
 }
 ```
